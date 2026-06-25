@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white font-sans text-ink antialiased;
+}
+
+@layer components {
+  /* Radial-gradient decorative blobs (lime / blue) from the Figma design */
+  .blob {
+    @apply pointer-events-none absolute rounded-full;
+    background: radial-gradient(circle, var(--blob-color) 0%, transparent 70%);
+  }
+  .blob-lime {
+    --blob-color: rgba(212, 246, 4, 0.9);
+  }
+  .blob-blue {
+    --blob-color: rgba(26, 115, 232, 0.85);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center border-x border-brand-500 bg-brand-50 px-5 py-2.5 font-sans text-base font-bold uppercase text-ink transition-colors hover:bg-brand-100;
+  }
+
+  .section-eyebrow {
+    @apply text-center font-label text-2xl font-semibold uppercase tracking-wide text-brand-500;
+  }
+}
