@@ -5,18 +5,20 @@ export default function Academy() {
       <div className="blob blob-lime left-1/3 top-10 h-[400px] w-[520px] opacity-40" />
 
       <div className="relative mx-auto grid max-w-page items-center gap-12 px-8 lg:grid-cols-2">
-        {/* Photo collage */}
+        {/* Photo collage — large back image with a smaller offset image overlapping */}
         <div className="relative h-[460px] sm:h-[520px]">
-          <div className="absolute left-0 top-0 h-[78%] w-[62%] overflow-hidden rounded-2xl shadow-lg">
+          {/* Back / large image (placeholder — awaiting final asset from Figma) */}
+          <div className="absolute left-0 top-0 h-[78%] w-[62%] overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
             <img
-              src="/assets/img04.jpg"
+              src="/assets/img09.png"
               alt="Academia Internacional FC player"
               className="h-full w-full object-cover"
             />
           </div>
+          {/* Front / smaller offset image */}
           <div className="absolute bottom-0 right-0 h-[62%] w-[48%] overflow-hidden rounded-2xl border-4 border-white shadow-xl">
             <img
-              src="/assets/img13.png"
+              src="/assets/img11.jpg"
               alt="Training session in Palmira, Colombia"
               className="h-full w-full object-cover"
             />

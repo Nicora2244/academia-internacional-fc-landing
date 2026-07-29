@@ -1,18 +1,9 @@
 import { useState } from 'react'
 
 const slides = [
-  {
-    image: '/assets/img07.png',
-    caption: 'Cali by night — the capital of South American football culture.',
-  },
-  {
-    image: '/assets/img11.jpg',
-    caption: 'A city where the game lives in every street and every barrio.',
-  },
-  {
-    image: '/assets/img01.jpg',
-    caption: 'Real fields, real intensity, real growth for your player.',
-  },
+  '/assets/img13.png',
+  '/assets/img08.png',
+  '/assets/img11.jpg',
 ]
 
 export default function Colombia() {
@@ -24,7 +15,7 @@ export default function Colombia() {
         <div className="relative overflow-hidden rounded-2xl">
           {/* Slides */}
           <div className="relative h-[420px] sm:h-[560px]">
-            {slides.map((slide, i) => (
+            {slides.map((image, i) => (
               <div
                 key={i}
                 className={`absolute inset-0 transition-opacity duration-700 ${
@@ -33,21 +24,19 @@ export default function Colombia() {
                 aria-hidden={i !== active}
               >
                 <img
-                  src={slide.image}
-                  alt={slide.caption}
+                  src={image}
+                  alt="Colombia"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-8 sm:p-12">
-                  <span className="font-display text-4xl font-bold uppercase text-lime sm:text-6xl">
-                    Colombia
-                  </span>
-                  <p className="mt-3 max-w-lg font-sans text-lg font-light text-white">
-                    {slide.caption}
-                  </p>
-                </div>
               </div>
             ))}
+
+            {/* Why Colombia card — bottom right */}
+            <div className="absolute bottom-0 right-0 bg-white px-10 py-8 sm:px-16 sm:py-10">
+              <h2 className="font-display text-3xl font-bold uppercase text-ink sm:text-4xl">
+                Why Colombia?
+              </h2>
+            </div>
           </div>
         </div>
 

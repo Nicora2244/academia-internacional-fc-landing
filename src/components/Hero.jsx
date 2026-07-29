@@ -8,14 +8,25 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-page px-6 pt-10">
         {/* Headline */}
-        <h1 className="text-center font-display text-[12vw] font-bold uppercase leading-[1.05] tracking-tight text-brand-500 sm:text-7xl lg:text-[124px]">
+        <h1 className="relative z-20 text-center font-display text-[12vw] font-bold uppercase leading-[1.05] tracking-tight text-brand-500 sm:text-7xl lg:text-[124px]">
           <span className="block text-left">Go South.</span>
           <span className="block text-right">Play Real.</span>
         </h1>
 
-        <div className="mt-10 grid items-start gap-10 lg:grid-cols-2">
+        {/* Copy + player photo band */}
+        <div className="relative mt-6 min-h-[460px] sm:min-h-[540px]">
+          {/* Player photo — anchored bottom-right, bleeding to the edge */}
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-0 w-full overflow-hidden rounded-lg sm:w-[62%] lg:w-[56%]">
+            <img
+              src="/assets/img04.jpg"
+              alt="Academia Internacional FC player driving forward on the pitch"
+              className="h-full w-full object-cover object-[center_30%]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent sm:from-white/80" />
+          </div>
+
           {/* Copy + CTA */}
-          <div className="max-w-md">
+          <div className="relative z-10 max-w-md pt-10 sm:pt-24">
             <h2 className="font-sans text-3xl font-medium uppercase leading-none text-ink sm:text-4xl">
               Spots are limited
             </h2>
@@ -28,16 +39,6 @@ export default function Hero() {
               Apply Now
             </a>
           </div>
-        </div>
-
-        {/* Photo band */}
-        <div className="relative mt-12 h-[260px] overflow-hidden rounded-lg sm:h-[320px]">
-          <img
-            src="/assets/img01.jpg"
-            alt="Players training on a South American football field"
-            className="h-full w-full object-cover object-[center_72%]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/30 to-transparent" />
         </div>
       </div>
     </section>
