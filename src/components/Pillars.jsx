@@ -1,19 +1,19 @@
 const pillars = [
   {
     title: 'FÚTBOL',
-    image: '/assets/img01.jpg',
+    image: `${import.meta.env.BASE_URL}assets/img01.jpg`,
     text: 'Two daily sessions with professional coaches, training the South American way: technical, creative, and intense. This is the real thing.',
     offset: false,
   },
   {
     title: 'CULTURA',
-    image: '/assets/img03.png',
+    image: `${import.meta.env.BASE_URL}assets/img03.png`,
     text: "Your player doesn't visit Colombia. They live it. The food, the music, the people, the rhythm of a city where football is part of everyday life.",
     offset: true,
   },
   {
     title: 'CONEXIÓN',
-    image: '/assets/img05.jpg',
+    image: `${import.meta.env.BASE_URL}assets/img05.jpg`,
     text: 'Training alongside Colombian players creates something no classroom can teach. Different backgrounds, same language: football.',
     offset: false,
   },

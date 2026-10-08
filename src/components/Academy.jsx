@@ -10,7 +10,7 @@ export default function Academy() {
           {/* Back / large image (placeholder — awaiting final asset from Figma) */}
           <div className="absolute left-0 top-0 h-[78%] w-[62%] overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
             <img
-              src="/assets/img09.png"
+              src={`${import.meta.env.BASE_URL}assets/img09.png`}
               alt="Academia Internacional FC player"
               className="h-full w-full object-cover"
             />
@@ -18,7 +18,7 @@ export default function Academy() {
           {/* Front / smaller offset image */}
           <div className="absolute bottom-0 right-0 h-[62%] w-[48%] overflow-hidden rounded-2xl border-4 border-white shadow-xl">
             <img
-              src="/assets/img11.jpg"
+              src={`${import.meta.env.BASE_URL}assets/img11.jpg`}
               alt="Training session in Palmira, Colombia"
               className="h-full w-full object-cover"
             />

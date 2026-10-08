@@ -18,7 +18,7 @@ export default function Hero() {
           {/* Player photo — anchored bottom-right, bleeding to the edge */}
           <div className="pointer-events-none absolute inset-y-0 right-0 z-0 w-full overflow-hidden rounded-lg sm:w-[62%] lg:w-[56%]">
             <img
-              src="/assets/img04.jpg"
+              src={`${import.meta.env.BASE_URL}assets/img04.jpg`}
               alt="Academia Internacional FC player driving forward on the pitch"
               className="h-full w-full object-cover object-[center_30%]"
             />

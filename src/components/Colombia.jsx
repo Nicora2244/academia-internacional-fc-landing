@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
 const slides = [
-  '/assets/img13.png',
-  '/assets/img08.png',
-  '/assets/img11.jpg',
+  `${import.meta.env.BASE_URL}assets/img13.png`,
+  `${import.meta.env.BASE_URL}assets/img08.png`,
+  `${import.meta.env.BASE_URL}assets/img11.jpg`,
 ]
 
 export default function Colombia() {
